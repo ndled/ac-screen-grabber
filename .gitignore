@@ -1,1 +1,4 @@
-tmp
+tmp/
+ac-screen-grab/static/imgs/
+ac-screen-grab/static/single/
+ac-screen-grab/static/new/

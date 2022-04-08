@@ -90,6 +90,15 @@ def download(playlist_url):
         ydl.download([playlist_url])
 
 
+def single_download(url, path = "static/single"):
+    ydl_opts = {
+        'outtmpl': resolvepath(f"{path}/{'%(title)s-%(id)s.%(ext)s'}"),
+        'overwrites': True,
+        'format':'135' # Fun fact, has to be string
+    }
+    with YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
+
 def make_dirs():
     if not os.path.exists('tmp/videos'):
         os.makedirs(resolvepath('tmp/videos'))

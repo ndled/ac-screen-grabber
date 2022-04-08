@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Inspire{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post" action="/">
+    <input type="submit" value="Random Image" name="action1"/>
+</form>
+<img src="{{image}}" alt="{{imgL}}" style="width:100%">
+
+{% endblock %}

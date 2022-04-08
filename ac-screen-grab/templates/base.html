@@ -1,0 +1,20 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Inspire_Me</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <h1>AC Inspire</h1>
+    <ul>
+      <li><a href="{{ url_for('.single') }}">Single Frame</a>
+      <li><a href="{{ url_for('.myapp') }}">AC Inspires</a> 
+      <li><a href="{{ url_for('.new') }}">New Set</a>
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>

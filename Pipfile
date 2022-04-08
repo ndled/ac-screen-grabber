@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 youtube-dl = "*"
 yt-dlp = "*"
+opencv-python = "*"
+flask = "*"
 
 [dev-packages]
 

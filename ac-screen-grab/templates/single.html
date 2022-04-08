@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}New Video{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<form method="post">
+    <input type="text" name="new_video"/>
+    <input type="submit" name="submit"/>
+</form>
+
+<img src="{{image}}" alt="{{imgL}}" style="width:100%">
+
+{% endblock %}
