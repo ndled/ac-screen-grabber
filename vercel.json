@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-            "src": "./app.py",
+            "src": "./ac_screen_grab/app.py",
             "use": "@vercel/python"
         }
     ],
