@@ -8,8 +8,6 @@ youtube-dl = "*"
 yt-dlp = "*"
 opencv-python = "*"
 flask = "*"
-redis = "*"
-rq = "*"
 
 [dev-packages]
 
